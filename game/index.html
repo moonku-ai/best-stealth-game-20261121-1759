@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>The Quiet Gallery — a stealth game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0c0e14;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  #wrap {
+    width: 1280px;
+    max-width: 100vw;
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #14161d;
+    image-rendering: auto;
+  }
+  noscript p {
+    color: #eef1f6;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <noscript><p>The Quiet Gallery needs JavaScript to play.</p></noscript>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
